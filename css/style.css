@@ -1,14 +1,17 @@
 body.dark{
     background-image:url("giphy.gif");
-
+    background-size: auto;
+    background-repeat: repeat;
 }
 
-/* body{
+body{
     background-image: url("5.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-} */
-
+    background-size: 100vw 100vh;
+}
+h1{
+    margin:0;
+}
 .heading{
     color: rgb(252, 235, 1);
     font-size: 4em;
@@ -21,7 +24,7 @@ body.dark{
     width: 100%;
 
 }
-#choice,.div2{
+.choice,.div2{
     display: none;
 }
 .dark .heading{
@@ -107,16 +110,13 @@ body.dark{
     background: none;
     width: 100px;
     height: 100px;
-    font-size: 40px;
+    font-size: 50px;
     padding: 10px;
     margin: 10px auto;
     font-family: 'Monoton', cursive;
     color: royalblue;
     
 }
-
-
-
 
 .container{
     display: grid;
@@ -150,6 +150,10 @@ body.dark{
     text-align: center;
     border-radius: 50%;
     color:royalblue;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    font-size: 70px;
 }
 
 .show{
@@ -166,9 +170,40 @@ body.dark{
 }
 
  .swal-modal {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     border: 3px solid white;
   }
+  button.swal-button.swal-button--confirm {
+      background-color:rgb(252, 235, 1) ;
+}
+ button.swal-button.swal-button--confirm:hover{
+    background-color: rgb(253, 181, 24);
+} 
+.dark button.swal-button.swal-button--confirm {
+    background-color: blue;
+}
+
+.dark button.swal-button.swal-button--confirm:hover{
+    background-color: royalblue;
+} 
+
+.swal-text {
+    font-family: 'Press Start 2P', cursive;
+}
+.dark .swal-text {
+    font-family: 'Monoton', cursive;
+    font-size: 30px;
+}
+
+.swal-title {
+    font-family: 'Press Start 2P', cursive;
+}
+.dark .swal-title {
+    font-family: 'Monoton', cursive;
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
 
 .retry{
     background-color: rgb(253, 181, 24);
@@ -200,10 +235,11 @@ body.dark{
     color:rgb(253, 181, 24);
     padding: 5px;
     font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    bottom: 0vh;
         /*background-color: aqua;*/
 
 }
-
 
 
 .dark .footer{

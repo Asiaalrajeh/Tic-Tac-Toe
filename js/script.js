@@ -6,10 +6,10 @@ $(document).ready(function(){
 
         $(".chosePlayer").click(function(){
             $("#chose-player").hide();
-            $("#choice").show();
+            $(".choice").toggleClass("show animated bounceInDown");
         })
         $(".player").click(function(){
-            $("#choice").hide();
+            $(".choice").hide();
             $(".div2").toggleClass("show animated bounceInDown");
         })
 
