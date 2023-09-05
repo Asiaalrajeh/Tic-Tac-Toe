@@ -148,6 +148,11 @@ $(document).ready(function(){
                     count=0;
                   $('.box').text('');}
             }
+            else{
+              tryagainalert();
+             count=0;
+             $('.box').text('');}
+
         } 
 
         $('.retry').click(function(){
@@ -165,5 +170,15 @@ $(document).ready(function(){
            })
 
        } 
+
+       function tryagainalert(){
+        swal({
+            // title:player,
+            text: "NO ONE WINS,TRY AGAIN!",
+           closeOnClickOutside:true
+     
+        })
+      }
+
 }
 )
